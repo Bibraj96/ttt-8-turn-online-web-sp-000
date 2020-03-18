@@ -19,3 +19,11 @@ def valid_move?(board, index)
     true
   end
 end
+
+def input_to_index(user_input)
+  user_input.to_i - 1
+end
+
+def move(board, index, player_1 = "X")
+  board[index] = player_1
+end
